@@ -1,12 +1,23 @@
-appledoc-template-swifty
+appledoc-template-jazzy
 ========================
 
-Brings to appledoc the look &amp; feel of Apple’s official reference documentation, post WWDC 2014.
+Brings the look &amp; feel of Apple’s official reference documentation, post WWDC 2014 to appledoc.
 
-`appledoc -t ~/swifty`
+Example
+---
 
-Then
+![](http://i.gyazo.com/34ecfc2ea6bd8a36db70d48022b4ebb4.png)
 
-![](https://github.com/realm/jazzy/raw/master/screenshot.jpg)
+Installation
+---
 
-But without Swift things.
+Just clone the repository.
+
+Usage
+---
+
+```objc
+appledoc --template /path/to/jazzy_template .
+```
+
+Just add `--template` argument with the path to the template.
