@@ -1,0 +1,62 @@
+---
+projectName: "SomeProject"
+page: { title: "UIWebView Class Reference" }
+hasLongDescription: true
+longDescription: FLMAlbum に関する操作を一元的に取り扱うクラスです。
+sections:
+  - name: Instance Methods
+    uid: hoga
+    methods: 
+    - methodSelector: "someFunc:withParam:"
+      isInstanceMethod: true
+      isClassMethod: false
+      isProperty: false
+      abstract: s
+      declaration: func hoge()
+      hasMethodParameters: true
+      methodParameters: 
+        - argumentName: hoge
+        - argumentDescription: hoga
+      hasMethodResult: true
+      methodResult: Hga
+      hasLongDescription: true
+      longDescription: hogehogehoge
+      uid: hoge
+      htmlReferenceName: ge
+      github_token_url: sf
+    - methodSelector: "someFunc:withParam:"
+      isInstanceMethod: true
+      isClassMethod: false
+      isProperty: false
+      abstract: s
+      declaration: func hoge()
+      hasMethodParameters: true
+      methodParameters: 
+        - argumentName: hoge
+        - argumentDescription: hoga
+      hasMethodResult: true
+      methodResult: Hga
+      hasLongDescription: true
+      longDescription: hogehogehoge
+      uid: hoge
+      htmlReferenceName: ge
+      github_token_url: sf
+    - methodSelector: "someFunc:withParam:"
+      isInstanceMethod: true
+      isClassMethod: false
+      isProperty: false
+      abstract: s
+      declaration: func hoge()
+      hasMethodParameters: true
+      methodParameters: 
+        - argumentName: hoge
+        - argumentDescription: hoga
+      hasMethodResult: true
+      methodResult: Hga
+      hasLongDescription: true
+      longDescription: hogehogehoge
+      uid: hoge
+      htmlReferenceName: ge
+      url: saf
+      github_token_url: sf 
+---
