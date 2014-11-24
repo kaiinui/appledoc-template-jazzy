@@ -21,3 +21,10 @@ appledoc --template /path/to/jazzy_template .
 ```
 
 Just add `--template` argument with the path to the template.
+
+Current Limitations
+---
+
+1. Enums are currently not supported.
+2. Block Typedefs are currently not supported.
+3. Hierarchy Graph in document index are not supported. (This is limitation of appledoc)
