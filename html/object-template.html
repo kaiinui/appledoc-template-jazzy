@@ -76,6 +76,9 @@ $(".x-instance-method").click(function() {
             {{/hasLongDescription}}
           {{/object.comment}}
           </section>
+
+          {{>MetaDataTable}}
+
           <section class="section task-group-section">
 
           {{#object.methods}}
@@ -181,6 +184,36 @@ Section Method
                     </section>
                   </div>
                 </li>
+EndSection
+
+Section DeclaredIn
+{{#comment}}
+{{#prefferedSourceInfo}}
+{{filename}}
+{{/prefferedSourceInfo}}
+{{/comment}}
+EndSection
+
+Section MetaDataTable
+<section id="metadata_table">
+{{#page.specifications}}
+{{#values}}
+<div class="conforms-to">
+    <p class="para">{{title}}</p>
+    <hr>
+      <ul>
+{{#values}}
+  <li class="Objective-C">
+    <code class="code-voice">
+    {{#href}}<a href="{{&href}}">{{/href}}{{string}}{{#href}}</a>{{/href}}
+    </code>
+  </li>
+{{/values}}
+      </ul>
+  </div>
+{{/values}}
+{{/page.specifications}}
+</section>
 EndSection
 
 Section InstanceMethods
@@ -765,6 +798,117 @@ td {
   position: fixed;
   width: 734px;
   z-index: -1;
+}
+
+#reference #metadata_table {
+    height: 80px;
+    margin: 0 25px;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -o-box;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between
+}
+
+#reference #metadata_table>div {
+    height: 100%;
+    min-width: 25%;
+    margin-right: 20px
+}
+
+#reference #metadata_table .last-box {
+    margin-right: 0
+}
+
+#reference #metadata_table .half {
+    height: 50%
+}
+
+#reference #metadata_table .para {
+    margin-bottom: 0
+}
+
+#reference #metadata_table hr {
+    margin: 0 0 3px;
+    border: 0;
+    height: 1px;
+    background: rgba(233,233,233,1);
+    position: relative;
+    top: -1px
+}
+
+#reference #metadata_table ol,#reference #metadata_table ul {
+    overflow: auto;
+    height: 118px
+}
+
+#reference #metadata_table li {
+    list-style-type: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    color: rgba(0,136,204,1)
+}
+
+#reference #metadata_table .inheritance .depth4 {
+    padding-left: 12px
+}
+
+#reference #metadata_table .inheritance .depth5 {
+    padding-left: 26px;
+    background-position: -1px -6px
+}
+
+#reference #metadata_table .inheritance .depth6 {
+    padding-left: 40px;
+    background-position: 13px -6px
+}
+
+#reference #metadata_table .inheritance .depth7 {
+    padding-left: 54px;
+    background-position: 27px -6px
+}
+
+#reference #metadata_table .inheritance .depth8 {
+    padding-left: 68px;
+    background-position: 41px -6px
+}
+
+#reference #metadata_table .inheritance .depth9 {
+    padding-left: 82px;
+    background-position: 55px -6px
+}
+
+#reference #metadata_table .inheritance li {
+    background-image: url(../Images/class_node_parent_and_child_2x.png);
+    background-position: -15px -6px;
+    background-repeat: no-repeat;
+    background-size: 48px 29px
+}
+
+#reference #metadata_table .inheritance li.subclass {
+    background-image: url(../Images/class_node_subclass_with_siblings_2x.png)
+}
+
+#reference #metadata_table .inheritance li:last-of-type {
+    background-image: url(../Images/class_node_subclass_last_child_2x.png)
+}
+
+#reference #metadata_table .code-voice {
+    font-size: 12px;
+    line-height: 1.5
+}
+
+#reference #metadata_table span {
+    font-size: 13px;
+    color: rgba(128,128,128,1)
+}
+
+#reference #metadata_table {
+    margin-top: 40px;
 }
 
 EndSection

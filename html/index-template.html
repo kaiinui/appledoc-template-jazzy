@@ -38,6 +38,9 @@
     {{#hasProtocols}}
       <a class="collection-jump" href="#protocols">Protocols</a> &nbsp; 
     {{/hasProtocols}}
+    {{#hasCategories}}
+      <a class="collection-jump" href="#categories">Categories</a> &nbsp; 
+    {{/hasCategories}}
     </p>
   </section>
 
@@ -129,6 +132,43 @@
 </table>
     </section>
 {{/hasProtocols}}
+
+{{#hasCategories}}
+    <section class="section z-protocol">
+      <a name="protocols"></a>
+      <h3 class="section-name">Categories</h3>
+      <table class="collection-table Objective-C" border="0" cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      <th scope="col">
+        <p class="para">Categories</p>
+      </th>
+      <th scope="col">
+        <p class="para">Abstract</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+{{#categories}}
+      <tr class="z-protocol-node" scope="row">
+  <td scope="row">
+    <p class="para">
+      <code class="code-voice">
+        <a href="{{href}}">{{title}}</a>
+      </code>
+    </p>
+  </td>
+  <td>
+    <p class="para">
+      <code class="code-voice">{{title}}</code>
+    </p>
+  </td>
+</tr>
+{{/categories}}
+  </tbody> 
+</table>
+    </section>
+{{/hasCategories}}
 
     
 </article>
